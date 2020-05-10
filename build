@@ -24,7 +24,8 @@ base_args = [
     "-v", "/run/user/" + str(os.getuid()) + "/pulse:/run/user/1000/pulse",
     "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
     "-v", "/var/lib/dbus:/var/lib/dbus",
-    "-v", dirname + "/Steam:/home/steam/.local/share/Steam",
+    "-v", dirname + "/share:/home/steam/.local/share",
+#    "-v", dirname + "/dotsteam:/home/steam/.steam",
     os.path.split(dirname)[-1]
 ]
 
